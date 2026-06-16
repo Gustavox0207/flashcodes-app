@@ -36,15 +36,12 @@ Para rodar o projeto localmente em seu ambiente de desenvolvimento, siga os pass
    npm install
    ```
 
-3. **Configure o Firebase:**
-   Certifique-se de que o arquivo `src/config/firebase.js` contém as credenciais corretas do seu projeto Firebase.
-
-4. **Inicie o servidor de desenvolvimento:**
+3. **Inicie o servidor de desenvolvimento:**
    ```bash
    npx expo start
    ```
 
-5. **Execute no dispositivo:**
+4. **Execute no dispositivo:**
    - Use o app **Expo Go** no seu celular (Android/iOS) para escanear o QR Code.
    - Ou pressione `a` para Android (emulador) ou `i` para iOS (simulador).
 
@@ -59,5 +56,3 @@ O projeto passou por uma atualização técnica importante para garantir o funci
 
 Este projeto é para fins educacionais. Sinta-se à vontade para clonar e adaptar para seus próprios estudos.
 
----
-Desenvolvido por **Gustavo** e aprimorado com auxílio de **Manus AI**.
