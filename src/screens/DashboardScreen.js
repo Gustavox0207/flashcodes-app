@@ -30,12 +30,8 @@ function useFlashcards() {
           // Codificamos a URL inteira para o proxy não quebrar os parâmetros.
           const proxyUrl = `https://corsproxy.io/?url=${encodeURIComponent(targetUrl)}`;
           
-          // Se o professor rodar no navegador (Web), usa o proxy. 
-          // Se rodar no emulador Mobile (Expo Go), vai direto, pois no mobile não existe CORS!
           const fetchUrl = Platform.OS === 'web' ? proxyUrl : targetUrl;
 
-          // CORREÇÃO: Enviamos a chave de API no cabeçalho Authorization: Bearer,
-          // conforme exigido pela documentação oficial da QuizAPI (v2).
           const response = await fetch(fetchUrl, {
             headers: {
               'Authorization': `Bearer ${API_KEY}`,
